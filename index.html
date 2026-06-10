@@ -1,15 +1,161 @@
 <!DOCTYPE html>
-<html>
-<body style="background-color: #000000; font-family: 'Times New Roman', Times, serif;">
-  <h1 style="color: rgb(255, 255, 255); margin: 4px;">Welcome to WebOS</h1>
-  <h2 style="color: rgb(255, 255, 255)">Introduction</h2>
-  <p style="color: rgb(255, 255, 255)">Hello Guys!</p>
-  <img style="width: 1024px; height: 1024px; object-fit: cover;" src="./note 8.png" />
-  <p style="color: white">(source of the image)</p>
-  <a href="https://www.magnific.com/free-photo/beautiful-view-sunset-sea_3624503.htm" style="color: rgb(255, 255, 255)">Right Here!</a>
-  <p style="color: rgb(255, 255, 255)">Hello guys im learning coding! I love computers so i thought this would be a good way to start since i have no experience with code!</p>
-  <p style="color: rgb(255, 255, 255)">RTicked</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebOS</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #000;
+        color: #fff;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .hero {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 24px;
+        border: 1px solid #fff;
+        border-radius: 16px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .avatar {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #fff;
+      }
+
+      .hero-text {
+        flex: 1;
+      }
+
+      .hero-title {
+        margin: 0;
+        font-size: 3rem;
+        letter-spacing: -0.04em;
+      }
+
+      .hero-subtitle {
+        margin: 6px 0 18px;
+        font-size: 1.1rem;
+        font-style: italic;
+      }
+
+      .hero-description {
+        margin: 0;
+        line-height: 1.6;
+        max-width: 620px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <!--
+<img class="avatar" src="./note 8.png" alt="Avatar" />
+-->
+      <div class="hero-text">
+        <h1 class="hero-title">WebOS</h1>
+        <p class="hero-subtitle">An simple os i made!”</p>
+        <p class="hero-description">Hello guys im learning coding! I love computers so i thought this would be a good way to start since i have no experience with code!</p>
+      </div>
+    </section>
+
+    <div style="border: solid 1px #fff; width: 128px; padding: 10px; margin: 24px auto; border-radius: 12px;">
+      Box width 128px
+    </div>
+  </body>
+  <div style="position: absolute; top: 50%; left: 50%; 
+transform: translate(-30%, -30%); border: solid 1px #fff; padding: 10px; border-radius: 12px;">)">
+        (content)
+    </div>
+   <div style="position: absolute; top: 20px; left: 20px; border: solid 1px #fff; padding: 10px; border-radius: 12px;">
+        (content)
+    </div>
+  <div style="position: absolute; bottom: 20px; right: 20px; border: solid 1px #fff; padding: 10px; border-radius: 12px;">
+    <style>
+      body {
+        background: url('note 8.png') no-repeat center/cover #000;
+      }
+    </style>
+  </div>
+  
+  <!--
+  <div style="display: flex;">
+  
+  <p>
+  WebOS 
+  </p>
+<p>
+   4:44 PM 10/06/2026
+</p>
+  </div>
+-->
+
+<!---
+<div style="display:flex; justify-content: space-between">
+  <p>
+    WebOS
+  </p>
+  <p>
+    4:44 PM 10/06/2026
+  </p>
+-->
+
+<!-- 
+<div
+    style="position: absolute; width: 100%; display: flex; backdrop-filter: greyscale(10px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between;">
+    <p style="margin-left: 16px;">
+      WebOS
+    </p>
+    <p style="margin-right: 16px;">
+      4:44 PM 10/06/2026
+    </p>
+  </div>
+-->
+    <div
+    style="position: absolute; width: 100%; display: flex; backdrop-filter: sepia(10px); background-color: rgba(0, 0, 0, 0.125); color: #fff; justify-content: space-between; gap: 32px; bottom: 0; padding: 12px 0;">
+        <p
+          style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+            WebOS
+        </p>
+        <p style="margin-left: 16px; background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px;">
+             Always on the web? 
+        </p>
+        <p
+          style="margin-right: 16px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+            4:44 PM 10/06/2026
+        </p>
+  </div>
+  <html>
+    <body>
+        (site content)
+        <script>
+          var currentTime =new Date().toLocaleString();
+          document.getElementById('timeElement').textContent = currentTime;
+        </script>
+    </body>
+</html>
+</div>
+    <p id="timeElement"
+      style="position: absolute; bottom: 20px; right: 20px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px; backdrop-filter: sepia(10px)">
+      Time
+    </p>
+  </div>
+  <script>
+  setInterval(function () {
+  document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
+}, 1000);
+  </script>
+</div>
 </html>
 
-// add a image and name it "note 8.png" so you guys can see your images!
+
+
+
