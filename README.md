@@ -1,1 +1,1 @@
-A very simple web page! if you want to use this as a template, make sure to edit the code for your picture. This website is kinda broken though.
+WebOS is a OS in a website soon im going to add a AI assistant!
