@@ -1,161 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebOS</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background: #000;
-        color: #fff;
-        font-family: 'Times New Roman', Times, serif;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebOS</title>
 
-      .hero {
-        max-width: 900px;
-        margin: 40px auto;
-        padding: 24px;
-        border: 1px solid #fff;
-        border-radius: 16px;
-        display: flex;
-        gap: 20px;
-        align-items: center;
-      }
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="calculator.css">
+</head>
 
-      .avatar {
-        width: 96px;
-        height: 96px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 1px solid #fff;
-      }
+<body>
 
-      .hero-text {
-        flex: 1;
-      }
+  <!-- Taskbar -->
+  <div class="topbar">
 
-      .hero-title {
-        margin: 0;
-        font-size: 3rem;
-        letter-spacing: -0.04em;
-      }
-
-      .hero-subtitle {
-        margin: 6px 0 18px;
-        font-size: 1.1rem;
-        font-style: italic;
-      }
-
-      .hero-description {
-        margin: 0;
-        line-height: 1.6;
-        max-width: 620px;
-      }
-    </style>
-  </head>
-  <body>
-    <section class="hero">
-      <!--
-<img class="avatar" src="./note 8.png" alt="Avatar" />
--->
-      <div class="hero-text">
-        <h1 class="hero-title">WebOS</h1>
-        <p class="hero-subtitle">An simple os i made!”</p>
-        <p class="hero-description">Hello guys im learning coding! I love computers so i thought this would be a good way to start since i have no experience with code!</p>
-      </div>
-    </section>
-
-    <div style="border: solid 1px #fff; width: 128px; padding: 10px; margin: 24px auto; border-radius: 12px;">
-      Box width 128px
-    </div>
-  </body>
-  <div style="position: absolute; top: 50%; left: 50%; 
-transform: translate(-30%, -30%); border: solid 1px #fff; padding: 10px; border-radius: 12px;">)">
-        (content)
-    </div>
-   <div style="position: absolute; top: 20px; left: 20px; border: solid 1px #fff; padding: 10px; border-radius: 12px;">
-        (content)
-    </div>
-  <div style="position: absolute; bottom: 20px; right: 20px; border: solid 1px #fff; padding: 10px; border-radius: 12px;">
-    <style>
-      body {
-        background: url('note 8.png') no-repeat center/cover #000;
-      }
-    </style>
-  </div>
-  
-  <!--
-  <div style="display: flex;">
-  
-  <p>
-  WebOS 
-  </p>
-<p>
-   4:44 PM 10/06/2026
-</p>
-  </div>
--->
-
-<!---
-<div style="display:flex; justify-content: space-between">
-  <p>
-    WebOS
-  </p>
-  <p>
-    4:44 PM 10/06/2026
-  </p>
--->
-
-<!-- 
-<div
-    style="position: absolute; width: 100%; display: flex; backdrop-filter: greyscale(10px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between;">
-    <p style="margin-left: 16px;">
+    <p id="welcomeopen" class="topbar-button">
       WebOS
     </p>
-    <p style="margin-right: 16px;">
-      4:44 PM 10/06/2026
+
+    <p class="topbar-message">
+      Always on the web?
     </p>
-  </div>
--->
-    <div
-    style="position: absolute; width: 100%; display: flex; backdrop-filter: sepia(10px); background-color: rgba(0, 0, 0, 0.125); color: #fff; justify-content: space-between; gap: 32px; bottom: 0; padding: 12px 0;">
-        <p
-          style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
-            WebOS
-        </p>
-        <p style="margin-left: 16px; background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px;">
-             Always on the web? 
-        </p>
-        <p
-          style="margin-right: 16px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
-            4:44 PM 10/06/2026
-        </p>
-  </div>
-  <html>
-    <body>
-        (site content)
-        <script>
-          var currentTime =new Date().toLocaleString();
-          document.getElementById('timeElement').textContent = currentTime;
-        </script>
-    </body>
-</html>
-</div>
-    <p id="timeElement"
-      style="position: absolute; bottom: 20px; right: 20px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px; backdrop-filter: sepia(10px)">
-      Time
+
+    <p id="timeElement" class="topbar-button">
+      Loading...
     </p>
+
   </div>
-  <script>
-  setInterval(function () {
-  document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
-}, 1000);
-  </script>
+
+  <!-- Welcome Window -->
+  <div class="window" id="welcome">
+
+    <div class="windowheader" id="welcomeheader">
+
+      <div class="closebutton" id="welcomeclose"></div>
+
+      <p class="headertext">Welcome</p>
+
+      <div style="width:16px;"></div>
+
+    </div>
+
+    <div class="windowcontent">
+
+      <h2>WebOS</h2>
+
+      <p>
+        Hello guys! I'm learning coding.
+        I love computers so I thought this
+        would be a good way to start since
+        I have no experience with code.
+      </p>
+
+    </div>
+
+  </div>
+<div id="desktopApps">
+  <div id="notesicon" class="appicon">
+    <img src="notes.png" class="iconimage">
+    <p>Notes</p>
+  </div>
+  <div id="calculatoricon" class="appicon">
+    <img src="calculator.png" class="iconimage">
+    <p>Calculator</p>
+  </div>
 </div>
+
+<div class="window" id="notes" style="display:none;">
+  <div class="windowheader" id="notesheader">
+    <div class="closebutton" id="notesclose"></div>
+    <p class="headertext">Notes</p>
+    <div style="width:16px;"></div>
+  </div>
+
+  <div class="windowcontent">
+  <h2>Notes</h2>
+
+  <textarea rows="10" cols="30"></textarea>
+</div>
+</div>
+
+<div class="window" id="calculator" style="display:none;">
+  <div class="windowheader" id="calculatorheader">
+    <div class="closebutton" id="calculatorclose"></div>
+    <p class="headertext">Calculator</p>
+    <div style="width:16px;"></div>
+  </div>
+
+  <div class="windowcontent">
+    <div class="container">
+      <div class="calc-text">
+        <p id="user-input">0</p>
+      </div>
+
+      <div class="calc-keys">
+        <button type="button" class="key-others operations">AC</button>
+        <button type="button" class="key-others operations">DEL</button>
+        <button type="button" class="key-others operations">%</button>
+        <button type="button" class="key-operate operations">/</button>
+
+        <button type="button" class="numbers">7</button>
+        <button type="button" class="numbers">8</button>
+        <button type="button" class="numbers">9</button>
+        <button type="button" class="key-operate operations">*</button>
+
+        <button type="button" class="numbers">4</button>
+        <button type="button" class="numbers">5</button>
+        <button type="button" class="numbers">6</button>
+        <button type="button" class="key-operate operations">-</button>
+
+        <button type="button" class="numbers">1</button>
+        <button type="button" class="numbers">2</button>
+        <button type="button" class="numbers">3</button>
+        <button type="button" class="key-operate operations">+</button>
+
+        <button type="button" class="key-zero numbers">0</button>
+        <button type="button" class="numbers">.</button>
+        <button type="button" class="key-operate operations">=</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="calculator.js"></script>
+</body>
 </html>
-
-
-
-

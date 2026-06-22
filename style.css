@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url('note 8.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.topbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.25);
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+
+.topbar-button {
+  margin: 0 16px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.topbar-message {
+  margin: 0;
+  padding: 4px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.window {
+  position: absolute;
+  top: 120px;
+  left: 40px;
+  width: 350px;
+  border: 2px solid white;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+.windowheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+  user-select: none;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.closebutton {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #EC6B5E;
+  cursor: pointer;
+}
+
+.headertext {
+  margin: 0;
+}
+
+.windowcontent {
+  padding: 12px;
+}
+
+#desktopApps {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.appicon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iconimage {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.appicon p {
+  margin: 4px 0 0 0;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 8px;
+  resize: none;
+}
+
+.appicon:hover {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8bc6ec;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: #000000;
+  padding: 25px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.calc-text {
+  margin-bottom: 20px;
+  padding-left: 5px;
+}
+
+.calc-text p {
+  width: 100%;
+  font-size: 3.5rem;
+  text-align: end;
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  word-wrap: break-word;
+  word-break: break-all;
+}
